@@ -51,7 +51,7 @@ public class receipt
 		form.format(t, tax);
 		form.format(tot, total);
 		System.out.println("\n__________________________________________");
-		System.out.println("* Thank you for your support *");
+		System.out.println("	* Thank you for your support *");
 	}
 	public void format(String item, double price)
 	{
