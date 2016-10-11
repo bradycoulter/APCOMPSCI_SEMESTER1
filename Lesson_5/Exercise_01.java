@@ -4,22 +4,28 @@ public class Exercise_01
 {
 	public static void main(String[]args)
 	{
+		
 		Random rand = new Random();
-		int proll = rand.nextInt(7);
-		int croll = rand.nextInt(7);
+		int proll = rand.nextInt(6)+1;
+		int croll = rand.nextInt(6)+1;
 		
-		rollDice();
-		
+		String winner = rollDice(proll, croll);
 		System.out.println("You rolled a " + proll);
 		System.out.println("Computer rolled a " + croll);
+		System.out.println("The winner is " + winner);
 		
 	}
-	public boolean rollDice(String winner)
+	public static String rollDice(int proll, int croll)
 	{
-		boolean rollDice
-		if (int proll > int croll);
-			System.out.println("The winner is you");
-		if (int proll < int croll);
-			System.out.println("The winner is computer");
+		String winner = "";
+		
+		if (proll > croll)
+			winner = "Player";
+		if (croll > proll)
+			winner = "Computer";
+		if (proll == croll)
+			winner = "nobody";
+		
+		return winner;
 	}
 }
