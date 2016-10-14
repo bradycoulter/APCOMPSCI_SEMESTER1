@@ -27,6 +27,6 @@ public class compound_interest
 	
 	public static void print(double payment)
 	{
-		System.out.printf("%.2f", "Your monthly payment will be " + payment);
+		System.out.printf("Your monthly payment will be %.2f ", payment);
 	}
 }

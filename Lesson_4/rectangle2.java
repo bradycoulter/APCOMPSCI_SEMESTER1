@@ -1,26 +1,22 @@
 import java.util.Scanner;
-public class rectangle
+public class rectangle2
 {
-	static double l;
-	static double w;
-	static double perimeter;
-	
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
-		rectangle calc = new rectangle();
-		rectangle form = new rectangle();
+		rectangle2 calc = new rectangle2();
+		rectangle2 form = new rectangle2();
 		System.out.println("Please enter the length:");
-		l = kb.nextDouble();
+		double l = kb.nextDouble();
 		System.out.println("Please enter the height:");
-		w = kb.nextDouble();
-		calc.calcPerim(l, w);
+		double w = kb.nextDouble();
+		double perimeter = calc.calcPerim(l, w);
 		form.print(perimeter);
 	}
 	
-	public static void calcPerim(double l, double w)
+	public static double calcPerim(double l, double w)
 	{
-		perimeter = (2 * l + 2 * w);
+		return (2 * l + 2 * w);
 	}
 	
 	public static void print(double perimeter)
