@@ -5,7 +5,6 @@ public class compound_interest
 	{
 		Scanner kb = new Scanner(System.in);
 		compound_interest calcC = new compound_interest();
-		compound_interest form = new compound_interest();
 		System.out.println("Please enter the rate.");
 		double rate = kb.nextDouble();
 		System.out.println("Please enter the principal.");
@@ -15,7 +14,7 @@ public class compound_interest
 		System.out.println("Please enter the number of times the loan is compounded.");
 		double number = kb.nextDouble();
 		double payment = calcC.calcPayment(rate, princpl, number, time);
-		form.print(payment);
+		System.out.println("Your monthly payment will be " + payment);
 		
 		
 	}
@@ -23,10 +22,5 @@ public class compound_interest
 	public static double calcPayment(double r, double p, double n, double t)
 	{
 		return (p * (Math.pow(1+r/n, n*t))/(12*t));
-	}
-	
-	public static void print(double payment)
-	{
-		System.out.printf("%.2f", "Your monthly payment will be " + payment);
 	}
 }
