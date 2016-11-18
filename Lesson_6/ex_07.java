@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ex_01
+public class ex_07
 {
 	public static void main(String[]args)
 	{
@@ -7,9 +7,9 @@ public class ex_01
 		System.out.println("Please enter a word: ");
 		String word = kb.next();
 		
-		for(int i = 1; i <= word.length(); i++)
+		for(int i = word.length(); i >= 0; i--)
 		{
-			System.out.println(word.substring(0));
+			System.out.println(word.substring(i));
 		}
 	}
 }

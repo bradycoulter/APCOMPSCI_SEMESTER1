@@ -7,8 +7,7 @@ public class ex_03
 		System.out.println("Please enter a word: ");
 		String word = kb.next();
 		
-		for(int i = 0; i >=
-		word.length(); i++)
+		for (int i = word.length(); i >= 0; i--)
 		{
 			System.out.println(word.substring(0, i));
 		}
