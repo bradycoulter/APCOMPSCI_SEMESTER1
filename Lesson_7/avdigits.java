@@ -1,25 +1,28 @@
 import java.util.Scanner;
-public class Digitadder
+public class avdigits
 {
 	static int number, num;
-	static int sum = 0;
+	static double average = 0;
+	static int digits = 0;
 	
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Please enter your number:");
 		number = kb.nextInt();
-		addDigits();
-		System.out.println("The sum of the number " + number + " is " + sum + "!");
+		avDigits();
+		System.out.println("The average of the digits " + number + " is " + average + "!");
 	}
-	public static void addDigits()
+	public static void avDigits()
 	{
 		int num = number;
 		while (num > 0)
 		
 		{
-			sum += (num % 10);
+			digits++;
+			average += (num % 10);
 			num = num/10;
 		}
+		average = average/digits;
 	}
 }
