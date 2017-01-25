@@ -8,11 +8,12 @@ public class averageNumbers
 		{
 			numbers[i] = (int)(Math.random()*100)+1;
 		}
-		for(int num = numbers)
+		for(int num : numbers)
 		{
 			System.out.print(num + " ");
 		}
-		average(numbers);
+		System.out.println("");
+		System.out.println("The average of your numbers is: " + average(numbers));
 	}
 	public static int average(int[] n)
 	{
