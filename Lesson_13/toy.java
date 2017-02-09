@@ -15,13 +15,29 @@ public abstract class toy
 	}
 	
 	public abstract getType();
-	{
-		
-	}
 	
 	public void setCount(int c)
 	{
 		this.count = c;
 	}
 	
+	public int getCount()
+	{
+		return count;
+	}
+	
+	public void setName()
+	{
+		this.name = n;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public String toString()
+	{
+		return name + count;
+	}
 }
