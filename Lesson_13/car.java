@@ -1,23 +1,19 @@
-public class car
+public class Car extends Toy
 {
-	public car()
+	public Car()
 	{
 		super();
 	}
-	
-	public car(String n)
+	public Car(String n)
 	{
 		super(n);
 	}
-	
-	public String getType()
-	{
-		return car;
-	}
-	
 	public String toString()
 	{
-		return "car: " + car + "\n" +
-				super.toString();
+		return super.toString();
+	}
+	public String getType()
+	{
+		return "Car";
 	}
 }

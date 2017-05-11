@@ -1,23 +1,19 @@
-public class aFigure
+public class AFigure extends Toy
 {
-	public aFigure()
+	public AFigure()
 	{
 		super();
 	}
-	
-	public bill(String n)
+	public AFigure(String n)
 	{
 		super(n);
 	}
-	
-	public String getType()
-	{
-		return aFigure;
-	}
-	
 	public String toString()
 	{
-		return "aFigure: " + aFigure + "\n" +
-				super.toString();
+		return super.toString();
+	}
+	public String getType()
+	{
+		return "Action Figure";
 	}
 }
